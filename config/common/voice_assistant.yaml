@@ -149,7 +149,8 @@ voice_assistant:
     - homeassistant.service:
         service: media_player.play_media
         data:
-          entity_id: media_player.wohnzimmer
+          device_id: eb1b0c86a06c9753f938abb47c40a5f2
+          #entity_id: media_player.wohnzimmer
           media_content_id: !lambda 'return x;'
           media_content_type: music
           announce: "true"    
